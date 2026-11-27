@@ -4,6 +4,7 @@
 
 ![Version](https://img.shields.io/badge/version-v0.1.3__beta-orange?style=for-the-badge)
 ![OS](https://img.shields.io/badge/OS-Windows-blue?style=for-the-badge)
+[![Discord](https://img.shields.io/static/v1?label=DISCORD&message=JOIN%20HERE&color=5865F2&style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/v2prAkEmJ5)
 
 ---
 

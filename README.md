@@ -13,36 +13,31 @@ An open source mod loader for the game Schedule I that makes getting mods easy!
 | Table of Contents |
 | - |
 | [How To Use](#how-to-use) |
+| [Modding Engine](#modding-engine) |
+| [Terms Of Use](terms-of-use)
 
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+---
 
 # How To Use
+-  Download Schedule Loader through the releases tab on the GitHub page.
+-  Click the "Set up ScheduleLoader" button to set up the modding engine (Melon Loader) and the utilities base mod.
+-  In the "Library" tab turn on/off the mods you want to use the next time you load Schedule I.
+-  In the "Browser" tab discover new mods to try and download or view information about the mods you have.
+-  Uploading custom mods from other sites such as Nexus Mods can be done through the Library tab.
+-  Click the "Launch Game" button in the Library tab to launch Schedule I with your new mods. (Schedule I can be opened through steam with the mods installed, but changing mods can only be done through Schedule Loader)
+-  Uninstalling Schedule Loader can be done in the home page of the application. Simply click the uninstall button and Schedule Loader and its mods will fully be removed from your copy of Schedule I.
+
+
+# Modding Engine
+Schedule Loader downloads and installs [MelonLoader](https://github.com/LavaGang/MelonLoader/tree/master). See their page for more information about how games are modified. Melon Loader is licensed under an Apache-2.0 license. See [HERE](https://github.com/LavaGang/MelonLoader/blob/master/LICENSE.md) for the full license.
+
+Schedule Loader comes with a pre-installed mod titled "ScheduleMods Utils." This mod allows mods found in the browser and uploaded mods to be used, enabled/disabled and updated.
+
+
+# Terms Of Use
+- Schedule Loader and its developer are not responsible for any damage done to your system, save files, account, or copy of Schedule I. Use the program at your own risk.
+- Copying, modifying, or redistributing Schedule Loader (including adding malicious files or selling the application for money) is not permitted. Only download official releases from this GitHub page.
+- Third-party mods installed through the Browser or uploaded manually are not affiliated with Schedule Loader or its developer. Schedule Loader is not responsible for any damages, corrupted saves, or malware caused by any installed mods.
+- Schedule Loader is a free, non-commercial, fan-made tool and is not directly affiliated with MelonLoader, Schedule I, TVGS, or Unity.
+
+Copyright © 2026 [bongosmod](https://github.com/bongosmod). All rights reserved.

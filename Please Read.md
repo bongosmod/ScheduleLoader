@@ -53,3 +53,5 @@ Thank you for giving Schedule Loader a try. I hope it makes your time in Hyland 
 
 See you in game,
 **Bongosmod** 💚
+
+p.s. shout out chatgpt for writing this little guide hehe. enjoy!!

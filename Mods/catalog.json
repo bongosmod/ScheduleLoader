@@ -1,0 +1,49 @@
+{
+  "repo": "bongosmod/ScheduleLoader-Mods",
+  "mods": [
+    {
+      "name": "ScheduleMods Utils",
+      "file": "ScheduleMods.Utils.dll",
+      "author": "Bongosmod",
+      "description": "Core library: lists mods, enables and disables them, shared helpers.",
+      "version": "0.1.0",
+      "thumb": "utils.png",
+      "required": true
+    },
+    {
+      "name": "ScheduleMods GUI",
+      "file": "ScheduleMods.GUI.dll",
+      "author": "Bongosmod",
+      "description": "Adds a Modding button under Quit in the main menu and the pause menu. It opens a panel to switch your mods on and off.",
+      "version": "0.2.0",
+      "thumb": "gui.png"
+    },
+    {
+      "name": "Better Stackables",
+      "file": "BetterStackables.dll",
+      "author": "Bongosmod",
+      "description": "Quality of life: every item can stack, up to 100 per slot.",
+      "version": "0.1.0",
+      "thumb": "stackables.png",
+      "optional": true
+    },
+    {
+      "name": "The Backpacks Mod",
+      "file": "Backpacks.dll",
+      "author": "Bongosmod",
+      "description": "Adds more progression with bags you buy at Thrifty Threads: a Cardboard Bag at Hoodlum III ($650, 3 extra slots), a Backpack at Peddler III ($1300, 6 slots) and a Duffel Bag at Hustler III ($2200, 8 slots). Press B to open your bag. Police can't search it, but everything inside is lost if you die or get arrested.",
+      "version": "0.1.4",
+      "thumb": "backpacks.png",
+      "optional": true
+    },
+    {
+      "name": "TV+",
+      "file": "TVPlus.dll",
+      "author": "Bongosmod",
+      "description": "Adds a Videos app to the in-game TV. Pick an MP4 from your PC and it plays on the TV with sound, even after you walk away. Group watch plays the same video for everyone in your game. A Settings app gives the idle TV screen wallpapers (or your own picture) and clock fonts.",
+      "version": "0.3.0",
+      "thumb": "tvplus.png",
+      "optional": true
+    }
+  ]
+}

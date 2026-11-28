@@ -1,0 +1,6 @@
+# build output (the exe goes in a GitHub release, not the repository)
+bin/
+obj/
+dist/
+release/
+publish.log

@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\Il2Cpp.props" />
+  <PropertyGroup><AssemblyName>ScheduleMods.GUI</AssemblyName></PropertyGroup>
+  <ItemGroup><Compile Include="..\ScheduleMods.Utils\ModTools.cs" /></ItemGroup>
+</Project>

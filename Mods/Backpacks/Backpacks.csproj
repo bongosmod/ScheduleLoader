@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\Il2Cpp.props" />
+  <PropertyGroup><AssemblyName>Backpacks</AssemblyName></PropertyGroup>
+
+  <ItemGroup>
+    <!-- S1API ships Mono and IL2CPP builds side by side: skip the Mono build and the plugin loader, keep the IL2CPP one -->
+    <S1Dll Include="$(GameDir)\Mods\S1API*.dll;$(GameDir)\Plugins\S1API*.dll"
+           Exclude="$(GameDir)\**\*Mono*;$(GameDir)\**\*BepInEx*;$(GameDir)\**\S1APILoader*" />
+    <Reference Include="@(S1Dll)" Private="false" />
+  </ItemGroup>
+
+  <Target Name="CheckS1Api" BeforeTargets="BeforeBuild">
+    <Error Condition="'@(S1Dll)'==''" Text="S1API was not found in the game folder. Run Set up Schedule Loader again, then install The Backpacks Mod." />
+  </Target>
+</Project>

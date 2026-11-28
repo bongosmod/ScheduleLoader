@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PlatformTarget>x64</PlatformTarget>
+    <AssemblyName>ScheduleLoader</AssemblyName>
+    <RootNamespace>ScheduleLoader</RootNamespace>
+    <DebugType>none</DebugType>
+    <ApplicationIcon>Assets\app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Using Include="System.IO" />
+  </ItemGroup>
+
+  <!-- Packs the mod source and thumbnails into the exe itself, so users only need the one file. -->
+  <Target Name="BuildPayload" BeforeTargets="AssignTargetPaths">
+    <ItemGroup>
+      <PayloadMods Include="..\Mods\**\*" Exclude="..\Mods\**\bin\**;..\Mods\**\obj\**" />
+      <PayloadAssets Include="Assets\**\*" />
+    </ItemGroup>
+    <RemoveDir Directories="$(IntermediateOutputPath)payload" />
+    <Copy SourceFiles="@(PayloadMods)" DestinationFiles="@(PayloadMods->'$(IntermediateOutputPath)payload\src\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(PayloadAssets)" DestinationFiles="@(PayloadAssets->'$(IntermediateOutputPath)payload\Assets\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Delete Files="$(IntermediateOutputPath)payload.zip" />
+    <ZipDirectory SourceDirectory="$(IntermediateOutputPath)payload" DestinationFile="$(IntermediateOutputPath)payload.zip" />
+    <ItemGroup>
+      <EmbeddedResource Include="$(IntermediateOutputPath)payload.zip" LogicalName="payload.zip" />
+    </ItemGroup>
+  </Target>
+</Project>
